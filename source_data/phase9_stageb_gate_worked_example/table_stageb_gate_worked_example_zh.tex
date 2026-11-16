@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\caption{\textbf{预先规定的判据与观测结果。} Stage B 判据列仅适用于两个 Stage B 模型列。除明确标注 NetSim 外，Stage B 汇总先平均两个训练重复，再使用六个数据单元。Lorenz-96 先平均两个训练种子，再报告五个数据种子的均值 $\pm$ 样本标准差，或明确标出的最小值；其独立条件列于表下。}
+\label{tab:stageb_frozen_gates}
+\scriptsize
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{0.15\textwidth}p{0.30\textwidth}p{0.14\textwidth}p{0.14\textwidth}p{0.17\textwidth}}
+\toprule
+诊断 & 冻结 Stage B 判据 & Mamba concat & 因果 TCN concat & Lorenz-96 示例 \\
+\midrule
+遗漏路径 & $M_{\mathrm{miss}}\geq0.20$，至少 5/6 单元 & 6/6 单元 & 6/6 单元 & $0.561\pm0.014$ \\
+辅助路径使用 & 至少 5/6 单元为正，且固定目标 $\Delta$MSE 中位数 $\geq0.05$ & 6/6；中位数 0.778 & 6/6；中位数 0.687 & $0.528\pm0.026$ \\
+直接得分差异 & 六单元 Pearson 中位数 $\leq0.90$，且至少 3/4 NetSim 被试达到差异判据 & $r=0.480$；4/4 & $r=0.779$；4/4 & $r=0.840\pm0.038$；Jaccard $0.658\pm0.071$ \\
+坐标混合 & 归一化源熵中位数 $\geq0.75$ & 0.969 & 0.965 & $0.956\pm0.003$；5/5 \\
+时间尾部 & $K$ 之外质量中位数 $\geq0.05$ & 0.258 & 0.183 & $0.182\pm0.018$；5/5 \\
+时域稳定性 & H64/H128 比值至少 5/6 单元 $\geq0.99$，最小值 $\geq0.95$；名义差异 $\leq10^{-7}$ & 最小 0.9999；差异 0 & 最小 1.0000；差异 0 & 最小 $\approx1$；差异 0；5/5 \\
+图语境 & Baseline NetSim AUROC 中位数 $\geq0.60$ 才允许强图语境解释 & 0.495；弱 & 0.495；弱 & Baseline AUROC $0.863\pm0.018$ \\
+\bottomrule
+\end{tabular}}
+\par\smallskip
+Lorenz 条件：熵 $\geq0.75$ 与尾部质量 $\geq0.05$ 各要求至少 4/5 数据种子；H64/H128 质量比 $\geq0.95$ 与名义差异 $\leq10^{-7}$ 各要求全部 5/5。实际四项均为 5/5 通过。其他 Lorenz 条件见附录~\ref{app:reproducibility}及随附冻结配置。
+\end{table}

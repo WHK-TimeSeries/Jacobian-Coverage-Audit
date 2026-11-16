@@ -1,0 +1,2 @@
+# Compatibility alias. Use the separate figure lock for accepted plot versions.
+-r requirements-cpu.lock

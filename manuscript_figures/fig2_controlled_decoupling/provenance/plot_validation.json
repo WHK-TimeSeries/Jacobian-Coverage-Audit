@@ -1,0 +1,20 @@
+{
+  "all_source_values_finite": true,
+  "all_values_within_axes": true,
+  "backend": "Python/matplotlib",
+  "capacity_endpoints": {
+    "baseline_mse": 0.00648461272940036,
+    "baseline_partial_auroc": 0.8774642806179228,
+    "d16_mse": 0.00165639175102112,
+    "d16_partial_auroc": 0.4595687821735188
+  },
+  "layout": "two rows by three columns",
+  "no_observations_excluded": true,
+  "passed": true,
+  "population_sd_ddof": 0,
+  "record_counts": {
+    "capacity_rows": 30,
+    "coefficient_rows": 5,
+    "intervention_rows": 10
+  }
+}

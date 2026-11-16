@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{\textbf{覆盖对齐修复的预设门槛结果。} 联合资格要求图效应、纯 MSE 保持、比较器安全和语义有效性全部通过。MSE 门槛要求平均恶化不超过 $10\%$ 且每个数据种子不超过 $20\%$；在 $\lambda=3\times10^{-4}$ 时，一个种子达到 $20.262\%$，其相对 baseline 的平均 AUROC 差值（$-0.110548$）也未达到 $-0.10$ 的安全下限。}
+\label{tab:repair_gates}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccccc}
+\toprule
+$\lambda$ & 图效应 & 纯 MSE & 安全 & 语义 & 联合 \\
+\midrule
+$3\times10^{-4}$ & 通过 & 未通过 & 未通过 & 通过 & \textbf{未通过} \\
+$1\times10^{-3}$ & 通过 & 未通过 & 通过 & 通过 & \textbf{未通过} \\
+$3\times10^{-3}$ & 通过 & 未通过 & 通过 & 通过 & \textbf{未通过} \\
+$1\times10^{-2}$ & 通过 & 未通过 & 通过 & 通过 & \textbf{未通过} \\
+\bottomrule
+\end{tabular}
+\end{table}

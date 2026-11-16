@@ -1,0 +1,13 @@
+{
+  "release_name": "kbs-submission-2026-11-16",
+  "research_snapshot_commit": "33356a2acfbf71dce6ef8c734a871acd4534fd36",
+  "packaging_commit": "5275b3d492546798df3d569718d2f3dc45c75556",
+  "development_build": false,
+  "integrity_mode": "archive_sha256_manifest",
+  "formal_release_authorization": false,
+  "curated_research_files": 100,
+  "publication_source_map": "PUBLICATION_SOURCE_MAP.json",
+  "scientific_code_policy": "Original computation; publication docstrings may differ.",
+  "inventory": "CHECKSUMS.txt",
+  "manuscript_commit": "5275b3d492546798df3d569718d2f3dc45c75556"
+}

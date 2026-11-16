@@ -1,0 +1,3 @@
+"method","passed_checks","total_checks","missing_route_qualifying_units","mask_c_qualifying_units","netsim_discrepancy_units","partial_total_pearson_unit_median","coordinate_entropy_unit_median","temporal_tail_unit_median","h64_h128_unit_minimum","nominal_horizon_max_abs"
+"mamba_concat","11","11","6","6","4","0.4796822244157689","0.9693318761174002","0.25780285201824316","0.9998910396220482","0.0"
+"tcn_concat","11","11","6","6","4","0.7788421374997783","0.9653471643803975","0.18301804646541808","1.0","0.0"

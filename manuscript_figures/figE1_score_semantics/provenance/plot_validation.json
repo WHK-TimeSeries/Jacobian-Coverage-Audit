@@ -1,0 +1,24 @@
+{
+  "all_source_values_finite": true,
+  "all_values_within_axes": true,
+  "backend": "Python/matplotlib",
+  "legacy_claim_boundary": "Semantic diagnostic only; no graph-recovery, ISTF, or Mamba effectiveness claim.",
+  "no_observations_excluded": true,
+  "passed": true,
+  "population_sd_ddof": 0,
+  "record_count": 5,
+  "summaries": {
+    "concat_partial_total_pearson": {
+      "mean": 0.5064163339049811,
+      "population_sd": 0.10657338146112112
+    },
+    "legacy_filtered_raw_pearson": {
+      "mean": 0.8315682430514407,
+      "population_sd": 0.02097243982450516
+    },
+    "legacy_filtered_raw_topk_jaccard": {
+      "mean": 0.7842985389896145,
+      "population_sd": 0.0983270470263141
+    }
+  }
+}

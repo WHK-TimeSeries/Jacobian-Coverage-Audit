@@ -1,0 +1,8 @@
+diagnostic,frozen_stageb_criterion,mamba_stageb,tcn_stageb,lorenz96_worked_example
+missing_route,"M_missing >= 0.20 in >= 5/6 units","6/6 units","6/6 units","0.561 +/- 0.014"
+auxiliary_route_use,"positive in >= 5/6 units and median fixed-target DeltaMSE >= 0.05","6/6; median 0.778","6/6; median 0.687","0.528 +/- 0.026"
+direct_score_disagreement,"six-unit median Pearson <= 0.90 and discrepancy in >= 3/4 NetSim subjects","Pearson 0.480; 4/4","Pearson 0.779; 4/4","Pearson 0.840 +/- 0.038; Jaccard 0.658 +/- 0.071"
+coordinate_mixing,"median normalized source entropy >= 0.75","0.969","0.965","0.956 +/- 0.003; 5/5 passed >=0.75 (required >=4/5)"
+temporal_tail,"median tail mass beyond K >= 0.05","0.258","0.183","0.182 +/- 0.018; 5/5 passed >=0.05 (required >=4/5)"
+horizon_stability,"H64/H128 ratio >= 0.99 in >= 5/6 and minimum >= 0.95; nominal max difference <= 1e-7","minimum 0.9999; nominal difference 0","minimum 1.0000; nominal difference 0","minimum approximately 1; nominal difference 0; 5/5 passed ratio >=0.95 and difference <=1e-7 (required 5/5)"
+graph_context,"baseline NetSim median AUROC >= 0.60 only for strong-context interpretation","0.495; weak context","0.495; weak context","baseline AUROC 0.863 +/- 0.018"

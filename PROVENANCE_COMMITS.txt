@@ -1,0 +1,26 @@
+Curated code snapshot:
+33356a2acfbf71dce6ef8c734a871acd4534fd36
+
+Phase 8 bounded repair/trade-off source:
+78a85acd513fddde1744283c68f17e731692ba2e
+
+Phase 9 Stage B protocol lock:
+21635836759d36cd2206afce85b4c15b1836e287
+
+Phase 9 Stage B execution release:
+0397e8af27c4f396d7713b129e0d7307da732681
+
+Lorenz-96 formal execution release:
+2637bb798a2bd09c4f60fe3ead32abbffec3b8ca
+
+These hashes identify scientific provenance states. They are not external
+repository links.
+
+Portable packaging revision:
+See RELEASE.json for the packaging commit and research snapshot commit.
+The portable entry validates archive checksum rather than requiring the
+original Git worktree or pretending to hold an original formal release token.
+
+Vendored JRNGC metric snapshot:
+974f242f21f055f7b9b535664c7c4f7a8d821994
+See third_party/JRNGC/PROVENANCE.md and LICENSE for exact files and attribution.

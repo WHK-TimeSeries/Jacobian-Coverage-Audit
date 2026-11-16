@@ -1,0 +1,16 @@
+{
+  "scientific_role": "Fresh five-data-seed strong-known-graph audit confirmation",
+  "statistical_unit": "data seed after averaging two training seeds",
+  "n_data_seeds": 5,
+  "formal_release_commit": "2637bb798a2bd09c4f60fe3ead32abbffec3b8ca",
+  "source_archive_sha256": "959916f42e58c61d632d5113b977a1907461b5b89991abac51b3f9baf8a53209",
+  "files": {
+    "data_seed_level_metrics.csv": "ea61b44ff5a0d9cf91dd3acc82b63162bbcf6f03bdc79f883b39c5ca1562903d",
+    "formal_confirmation_summary.json": "e41d8e90d1db68f6a515549213b46f1600d986b07b9df7b89156edf17d102b56",
+    "frozen_config.json": "1b1cf90353028c3f6170cb1a769c1b1fbbc6412f2982492f5cc577a6b90fc465",
+    "table_summary.csv": "e4b2bbab8d69c4a0218338600dbb5bdfe667b8345bb1f9979180c87841c7d531",
+    "table_lorenz_confirmation_en.tex": "5be4ebc9601a879219f04c72f9de30293bdbad73c732447ec179bed768daee12",
+    "table_lorenz_confirmation_zh.tex": "7955090166af70cfe85d28f4c1d9da54cd683c04438cbe1c5bb985e72f60cea5",
+    "generate_table.py": "5fe2a4f18493a854c2e1e0b21568056b5061617b0f8d70fd4d599015c518172d"
+  }
+}

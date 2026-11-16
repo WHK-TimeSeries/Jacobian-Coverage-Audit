@@ -1,0 +1,22 @@
+{
+  "all_source_values_finite": true,
+  "all_values_within_axes": true,
+  "allowed_claim": "Under a preregistered bounded raw-chain audit, omitted-route attribution, fixed-target auxiliary-route use, and partial-versus-total score disagreement were reproduced across held-out NetSim subjects, nonoverlapping MoCap segments, and two causal auxiliary preprocessors.",
+  "backend": "Python/matplotlib",
+  "frozen_checks": {
+    "baseline_netsim_auroc_median": 0.4953703703703702,
+    "h64_h128_minimum": 0.9998910396220482,
+    "mask_c_threshold": 0.05,
+    "mass_beyond_H128_assessed": false,
+    "missing_route_threshold": 0.2,
+    "nominal_h64_h128_max_abs": 0.0
+  },
+  "layout": "two rows by three columns",
+  "no_observations_excluded": true,
+  "passed": true,
+  "record_counts": {
+    "architecture_rows": 2,
+    "netsim_graph_rows": 8,
+    "unit_rows": 12
+  }
+}

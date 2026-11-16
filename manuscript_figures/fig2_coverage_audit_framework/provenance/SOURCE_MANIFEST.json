@@ -1,0 +1,12 @@
+{
+  "figure": "fig2_coverage_audit_framework",
+  "evidence_type": "analytical_schematic_not_empirical_data",
+  "files": {
+    "fig2_coverage_audit_framework.drawio": "04a0385ade504997e3e01ef6a3be30fb69ab5bed8006c9d2bf666406cc5a2480",
+    "fig2_coverage_audit_framework.pdf": "4171cfa902a6ef439bd9cfff6f12f9cffb0a52ee4998d1dbfa48b96fc04162ef",
+    "fig2_coverage_audit_framework.png": "7bdf8b5bf831222a2530ffce3b4ac6e1982b464fb7a93d86e6e8ca8b9e3af945",
+    "fig2_coverage_audit_framework.svg": "3da1649dc2a3ffd358c37c8e1ce2d725f2b3c1cac211ac4fea6f40e1a499fe4e",
+    "README.md": "61747670cceeebf09dffc73777c73adea9deb7c134f40446848e6bbdd3e3cdc7",
+    "data/illustrative_matrices.json": "193ae8ae1e06f5c75a4268941470636016d8359dc5ed052301ce94f8ef8b0de4"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "all_source_values_finite": true,
+  "all_values_within_axes": true,
+  "backend": "Python/matplotlib",
+  "displayed_comparators": [
+    "Concat x-only",
+    "Baseline JRNGC",
+    "Full auxiliary lc10"
+  ],
+  "equal_lambda_comparator_displayed": false,
+  "gate_render": "not rendered; frozen outcomes are a companion LaTeX table",
+  "layout": "three upper panels and two wider lower panels",
+  "method_means": {
+    "$\\lambda=10^{-2}$": {
+      "auprc": 0.9132571070663009,
+      "auroc": 0.9251587419445734,
+      "coefficient_r": 0.9873319334980929,
+      "fixed_target_prediction_mse": 0.008704571674267433,
+      "relative_mse_percent": 105.39631069477855
+    },
+    "$\\lambda=10^{-3}$": {
+      "auprc": 0.817400361727747,
+      "auroc": 0.8747389505561879,
+      "coefficient_r": 0.9497693203643923,
+      "fixed_target_prediction_mse": 0.005950639490038101,
+      "relative_mse_percent": 40.47725150811557
+    },
+    "$\\lambda=3\\times10^{-3}$": {
+      "auprc": 0.867654294695749,
+      "auroc": 0.9108307419969658,
+      "coefficient_r": 0.9682020995275128,
+      "fixed_target_prediction_mse": 0.007374934541682366,
+      "relative_mse_percent": 74.22732434320666
+    },
+    "$\\lambda=3\\times10^{-4}$": {
+      "auprc": 0.7369347395643508,
+      "auroc": 0.8077325736616121,
+      "coefficient_r": 0.8839257854649226,
+      "fixed_target_prediction_mse": 0.0046506299792478,
+      "relative_mse_percent": 9.774028990275154
+    },
+    "Baseline JRNGC": {
+      "auprc": 0.8989163806506912,
+      "auroc": 0.9182804013490342,
+      "coefficient_r": 0.9810228949329093,
+      "fixed_target_prediction_mse": 0.007696667763714966,
+      "relative_mse_percent": 81.63955928024984
+    },
+    "Concat x-only": {
+      "auprc": 0.6419898017116012,
+      "auroc": 0.7355690376490746,
+      "coefficient_r": 0.7405886052325874,
+      "fixed_target_prediction_mse": 0.004238506080582666,
+      "relative_mse_percent": 0.0
+    },
+    "Full auxiliary lc10": {
+      "auprc": 0.6083259665277932,
+      "auroc": 0.7297473103642312,
+      "coefficient_r": 0.7182876576049669,
+      "fixed_target_prediction_mse": 0.005507680354639833,
+      "relative_mse_percent": 29.811308222998644
+    }
+  },
+  "mse_boundary_percent": 10.0,
+  "no_observations_excluded_from_source_table": true,
+  "passed": true,
+  "population_sd_ddof": 0,
+  "record_counts": {
+    "tradeoff_rows": 21
+  },
+  "repair_summary": [
+    {
+      "auprc_gain": 0.0949449378527496,
+      "auprc_gain_sd": 0.03204175754616707,
+      "auroc_gain": 0.07216353601253749,
+      "auroc_gain_sd": 0.031888867041318734,
+      "coefficient_gain": 0.1433371802323352,
+      "coefficient_gain_sd": 0.0412820204648968,
+      "label": "3e-4",
+      "method": "$\\lambda=3\\times10^{-4}$",
+      "relative_mse_percent": 9.774028990275154,
+      "relative_mse_percent_sd": 8.029717878199218
+    },
+    {
+      "auprc_gain": 0.17541056001614572,
+      "auprc_gain_sd": 0.05558510553304638,
+      "auroc_gain": 0.13916991290711334,
+      "auroc_gain_sd": 0.041026878148482764,
+      "coefficient_gain": 0.20918071513180495,
+      "coefficient_gain_sd": 0.07017420650571732,
+      "label": "1e-3",
+      "method": "$\\lambda=10^{-3}$",
+      "relative_mse_percent": 40.47725150811557,
+      "relative_mse_percent_sd": 14.896877680725511
+    },
+    {
+      "auprc_gain": 0.2256644929841476,
+      "auprc_gain_sd": 0.04739566219888555,
+      "auroc_gain": 0.17526170434789112,
+      "auroc_gain_sd": 0.027386753944925183,
+      "coefficient_gain": 0.22761349429492542,
+      "coefficient_gain_sd": 0.07800098472769001,
+      "label": "3e-3",
+      "method": "$\\lambda=3\\times10^{-3}$",
+      "relative_mse_percent": 74.22732434320666,
+      "relative_mse_percent_sd": 17.3350474646784
+    },
+    {
+      "auprc_gain": 0.2712673053546997,
+      "auprc_gain_sd": 0.03257359194698992,
+      "auroc_gain": 0.18958970429549873,
+      "auroc_gain_sd": 0.01874431013891709,
+      "coefficient_gain": 0.24674332826550557,
+      "coefficient_gain_sd": 0.08681351000060872,
+      "label": "1e-2",
+      "method": "$\\lambda=10^{-2}$",
+      "relative_mse_percent": 105.39631069477855,
+      "relative_mse_percent_sd": 14.319545183452288
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\centering
+\caption{\textbf{Joint criteria for coverage-aligned regularization.} Eligibility requires graph improvement,
+prediction preservation, comparator safety,
+and semantic validity. MSE degradation is
+limited to 10\% on average and 20\% per seed.
+The AUROC safety floor is $-0.10$ relative
+to baseline.}
+\label{tab:repair_gates}
+\footnotesize
+\setlength{\tabcolsep}{3.1pt}
+\begin{tabular}{lccccc}
+\toprule
+$\lambda$ & Graph & MSE & Safety & Semantic & Joint \\
+\midrule
+$3\times10^{-4}$ & Pass & Fail & Fail & Pass & \textbf{Fail} \\
+$1\times10^{-3}$ & Pass & Fail & Pass & Pass & \textbf{Fail} \\
+$3\times10^{-3}$ & Pass & Fail & Pass & Pass & \textbf{Fail} \\
+$1\times10^{-2}$ & Pass & Fail & Pass & Pass & \textbf{Fail} \\
+\bottomrule
+\end{tabular}
+\end{table}

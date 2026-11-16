@@ -1,0 +1,1 @@
+This repository accompanies the manuscript "Jacobian Coverage Audits for Reliable Neural Granger Causality in Multivariate Time Series". Copyright remains with the authors. Third-party files retain their stated licenses; third-party datasets are not redistributed. No open-source license is asserted for author-owned code.

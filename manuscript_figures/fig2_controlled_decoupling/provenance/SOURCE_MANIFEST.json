@@ -1,0 +1,21 @@
+{
+  "backend": "Python/matplotlib",
+  "figure": "fig2_controlled_decoupling",
+  "files": {
+    "data/capacity_replication.csv": "5524531018a0d20df6d51bc25d30b2b1897ad0c1b3c5965d4556875fede9acb7",
+    "data/coefficient_replication.csv": "9351c640f346c90cb7ac316d14f9820a34d92e14dcc0a98257691d8ad52f7590",
+    "data/fixed_target_interventions.csv": "7e47137627ac2fff146041eafaa35b1ca0a2195da61bf6383bde99659527845f",
+    "fig2_controlled_decoupling.pdf": "7c3e514cf2d3825c7695a7026414e5c30889e0ae2c62f648479880fc3355e81b",
+    "fig2_controlled_decoupling.png": "a6c87fb2ed951de7f5da94fb44e30126af856ad3f78f66aa7abb070dd1b84cb8",
+    "fig2_controlled_decoupling.svg": "03b37d5fb90dcc4398543f318330270fe4cab9b81b11fe85dd8fbb480969502b",
+    "provenance/plot_validation.json": "76d0d7eba6718efa02d142ced830443790d42efcaf7373df9a81209c7dbe3780",
+    "README.md": "2f7844b7adcb0790ece10bf9ace8ea769c34ce5c5eb4081255337c59b27a0256",
+    "requirements.txt": "22936bef571f1f2938c8a85e2f3f971d35190a1f7fdb977c31b978fbe70579d0",
+    "scripts/plot_figure.py": "0027f88c64824abc20ac26a1e4c6e5a756f65a3151bc289d436b17cfb851a9f5"
+  },
+  "matplotlib": "3.10.0",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]"
+}

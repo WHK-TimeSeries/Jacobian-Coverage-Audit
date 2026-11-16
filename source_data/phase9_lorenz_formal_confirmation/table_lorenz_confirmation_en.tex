@@ -1,0 +1,18 @@
+\begin{table*}[!t]
+\centering
+\caption{\textbf{Lorenz-96 graph scores and route diagnostics.} Values are mean $\pm$ sample standard deviation across five fresh data seeds after averaging two training seeds. The baseline and auxiliary concat models used the same raw target and total raw-chain nominal-lag evaluator.}
+\label{tab:lorenz_confirmation}
+\footnotesize
+\begin{tabularx}{\textwidth}{p{0.28\textwidth}p{0.18\textwidth}p{0.20\textwidth}Y}
+\toprule
+Quantity & Baseline JRNGC & Auxiliary concat & Paired audit contrast \\
+\midrule
+Fixed-target pure MSE & $(3.52\pm0.82)\times10^{-4}$ & $(1.96\pm0.28)\times10^{-4}$ & $41.6\pm15.5\%$ lower; 5/5 seeds \\
+Total nominal AUROC & $0.863\pm0.018$ & $0.859\pm0.015$ & $-0.004$ vs. baseline \\
+x-only partial nominal AUROC & $0.863\pm0.018$ & $0.803\pm0.011$ & total--partial $+0.056\pm0.011$; 5/5 seeds \\
+Missing-route relative magnitude & $0$ & $0.561\pm0.014$ & criterion met in 5/5 seeds \\
+Auxiliary-mask $\Delta$MSE & n/a & $0.528\pm0.026$ & positive in 5/5 seeds \\
+Partial--total Pearson / top-$k$ Jaccard & $1/1$ & $0.840\pm0.038$ / $0.658\pm0.071$ & discrepancy criterion met in 5/5 seeds \\
+\bottomrule
+\end{tabularx}
+\end{table*}

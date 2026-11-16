@@ -1,0 +1,175 @@
+{
+  "aggregate_gate_report": {
+    "checks": {
+      "baseline_mean_auroc": true,
+      "baseline_seed_coverage": true,
+      "coordinate_entropy_seed_coverage": true,
+      "discrepancy_seed_coverage": true,
+      "h64_h128_seed_coverage": true,
+      "mask_c_mean": true,
+      "mask_c_seed_coverage": true,
+      "missing_route_mean": true,
+      "missing_route_seed_coverage": true,
+      "nominal_horizon_seed_coverage": true,
+      "prediction_mse_mean": true,
+      "prediction_mse_seed_coverage": true,
+      "run_integrity": true,
+      "temporal_tail_seed_coverage": true
+    },
+    "counts": {
+      "baseline_auroc": 5,
+      "coordinate_entropy": 5,
+      "discrepancy": 5,
+      "h64_h128_mass": 5,
+      "mask_c": 5,
+      "missing_route": 5,
+      "nominal_horizon": 5,
+      "prediction_mse": 5,
+      "temporal_tail": 5
+    },
+    "passed": true,
+    "summaries": {
+      "baseline_total_nominal_auroc": {
+        "count": 5,
+        "maximum": 0.8750000000000002,
+        "mean": 0.8627777777777782,
+        "minimum": 0.8322222222222226,
+        "std_data_seed": 0.01771255396325533
+      },
+      "concat_coordinate_entropy_median": {
+        "count": 5,
+        "maximum": 0.9595725369583799,
+        "mean": 0.9562675652795795,
+        "minimum": 0.9517616583120465,
+        "std_data_seed": 0.003399994550220339
+      },
+      "concat_h64_h128_mass_ratio": {
+        "count": 5,
+        "maximum": 1.0,
+        "mean": 0.999999999999989,
+        "minimum": 0.9999999999999656,
+        "std_data_seed": 1.4041907525774755e-14
+      },
+      "concat_mask_c_fixed_target_mse_delta": {
+        "count": 5,
+        "maximum": 0.5571146097136079,
+        "mean": 0.5275411251321203,
+        "minimum": 0.5005360016730265,
+        "std_data_seed": 0.025506514121589805
+      },
+      "concat_missing_route_relative_magnitude": {
+        "count": 5,
+        "maximum": 0.5762732349346116,
+        "mean": 0.5614416096096166,
+        "minimum": 0.5445948603353399,
+        "std_data_seed": 0.013802273714377106
+      },
+      "concat_nominal_h64_h128_max_abs": {
+        "count": 5,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "std_data_seed": 0.0
+      },
+      "concat_partial_total_nominal_pearson": {
+        "count": 5,
+        "maximum": 0.8722525249138013,
+        "mean": 0.8400658014965732,
+        "minimum": 0.7769658200106819,
+        "std_data_seed": 0.038453541054938756
+      },
+      "concat_partial_total_nominal_topk_jaccard": {
+        "count": 5,
+        "maximum": 0.7156862745098038,
+        "mean": 0.6576689773284201,
+        "minimum": 0.5394736842105263,
+        "std_data_seed": 0.0711825467380451
+      },
+      "concat_temporal_tail_median": {
+        "count": 5,
+        "maximum": 0.19837663157239627,
+        "mean": 0.18220559554601737,
+        "minimum": 0.15249970697623566,
+        "std_data_seed": 0.018493589061785408
+      },
+      "concat_vs_baseline_relative_mse": {
+        "count": 5,
+        "maximum": -0.31150726928362615,
+        "mean": -0.4155989383353056,
+        "minimum": -0.6863289442495841,
+        "std_data_seed": 0.15450612078972562
+      }
+    }
+  },
+  "claim_boundary": {
+    "not_permitted": [
+      "ISTF or Mamba improves graph recovery",
+      "the concat architecture is universally invalid",
+      "H=128 establishes full-prefix completeness",
+      "the result is a successful repair method",
+      "the result authorizes Phase 7 Stage 1b"
+    ],
+    "permitted_if_aggregate_passes": "A strong-operating-point multi-seed case study shows that a legacy auxiliary concat route can carry predictive information while an x-only Jacobian score omits part of the total raw-chain attribution."
+  },
+  "formal_result": true,
+  "formal_run_count": 20,
+  "manuscript_evidence_eligible": true,
+  "protocol_name": "phase9_lorenz_901_confirmation_v1",
+  "release_lock": {
+    "actual_commit": "2637bb798a2bd09c4f60fe3ead32abbffec3b8ca",
+    "approved_commit": "2637bb798a2bd09c4f60fe3ead32abbffec3b8ca",
+    "canonical_config_sha256": "31fbde71aa80a53396039aeb8f128135c1b09cedf16e2b7aca61eb28455121a4",
+    "checks": {
+      "canonical_config_sha256": true,
+      "clean_worktree": true,
+      "commit": true,
+      "config_sha256": true,
+      "critical:configs/phase9_lorenz_901_confirmation_run_matrix_v1.csv": true,
+      "critical:configs/phase9_lorenz_901_confirmation_v1.json": true,
+      "critical:experiments/aggregate_phase9_lorenz_901_confirmation.py": true,
+      "critical:experiments/phase9_audit_stageb.py": true,
+      "critical:experiments/phase9_lorenz_901_confirmation.py": true,
+      "critical:experiments/phase9_lorenz_strong_operating_preflight.py": true,
+      "critical:paper-data/docs/phase9_lorenz_preflight/FORMAL_901_PROTOCOL.md": true,
+      "critical:scripts/run_phase9_lorenz_901_confirmation.sh": true,
+      "critical:src/knowledge_metrics.py": true,
+      "critical:src/lorenz96_frozen.py": true,
+      "critical:src/mamba_jrngc_pilot.py": true,
+      "critical:src/minimal_mamba.py": true,
+      "critical:src/phase8_coverage.py": true,
+      "critical:src/phase9_audit_generalization.py": true,
+      "critical:src/repaired_istf.py": true,
+      "critical:tests/test_phase9_lorenz_901_confirmation.py": true,
+      "critical:tools/build_phase9_lorenz_release_manifest.py": true,
+      "run_matrix_sha256": true
+    },
+    "clean_worktree": true,
+    "config_sha256": "1b1cf90353028c3f6170cb1a769c1b1fbbc6412f2982492f5cc577a6b90fc465",
+    "critical_files": {
+      "configs/phase9_lorenz_901_confirmation_run_matrix_v1.csv": "8357264f5f8bc8d0814a27704ad9f56e4f0758763298cfe54745991f7e380405",
+      "configs/phase9_lorenz_901_confirmation_v1.json": "1b1cf90353028c3f6170cb1a769c1b1fbbc6412f2982492f5cc577a6b90fc465",
+      "experiments/aggregate_phase9_lorenz_901_confirmation.py": "80210f2973fbf399665fdc40263ae9fee485921d04eafe00ccbcddbfc66b0679",
+      "experiments/phase9_audit_stageb.py": "d6ced27d95dd17052407452ab2b63185a3cb80466278d2b6b17b80899bf9089f",
+      "experiments/phase9_lorenz_901_confirmation.py": "9417acb81d0ad65c1a49c59ac81d08b3a19b421a75090ea22e8a965fa52dafb9",
+      "experiments/phase9_lorenz_strong_operating_preflight.py": "cea05e7c20a878892d4299d32c3de721f4ca5c011271f21875084b43de799090",
+      "paper-data/docs/phase9_lorenz_preflight/FORMAL_901_PROTOCOL.md": "2ca13a2fa445eceefc7267f5206b97ad21515849b74d1fe664e5929c68651315",
+      "scripts/run_phase9_lorenz_901_confirmation.sh": "e31cf77ffdb352901183344040dac59820c3d12f7b7997a4203cd2a1635a78e3",
+      "src/knowledge_metrics.py": "28583e2597899656a197aa7cb358bbf571332534221421f6347bfd81012e42d8",
+      "src/lorenz96_frozen.py": "47aa3d5e11edd7c72bd53f151983e5a106ac9d3e0169b087e5458f8460bb834f",
+      "src/mamba_jrngc_pilot.py": "b9c58817fa65becd042059cb1c3adcd5475f3ed07a2a68410e20c1209c495008",
+      "src/minimal_mamba.py": "6aae1f47059f922c289fc1b37c4c4e028e3425e94dd430f469db2151888d1b07",
+      "src/phase8_coverage.py": "2d3659d02c6877ee125aeba302ee1c52d7e150ed6479ca225a38d49632f8d193",
+      "src/phase9_audit_generalization.py": "8951b2589002c3e5e0e8d20a2c3c8e81c76498f9d57e1c0d3896984ccc98d87d",
+      "src/repaired_istf.py": "9213d3aeec1bf627724e73322630c54fa88caea073e0f128066e42bb6abcb92b",
+      "tests/test_phase9_lorenz_901_confirmation.py": "e65fc00a7b695a68d52482ec45cd82870de369a40dbb1b4a340ca3b489d42112",
+      "tools/build_phase9_lorenz_release_manifest.py": "adb407cae81cc48c5841787b9539a463c78b94e74c7b19ce14a6999fa303d83d"
+    },
+    "passed": true,
+    "release_lock_mode": "git_commit_and_source_manifest",
+    "run_matrix_sha256": "8357264f5f8bc8d0814a27704ad9f56e4f0758763298cfe54745991f7e380405",
+    "source_manifest_sha256": "cd5e6b2c1cf3aca6f10f111478214c060f96d8b1b2a2f8ff039417cb23bd44e9"
+  },
+  "stage1b_authorized": false,
+  "statistical_unit": "data_seed_after_averaging_two_train_seeds",
+  "statistical_unit_count": 5
+}

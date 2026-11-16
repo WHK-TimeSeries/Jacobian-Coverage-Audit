@@ -1,0 +1,24 @@
+\begin{table*}[!t]
+\centering
+\caption{\textbf{Pre-specified criteria and observed outcomes.} The Stage B criterion column applies only to the two Stage B model columns. Stage B summaries use six data units after averaging two training replicates, except where NetSim is specified. Lorenz-96 values are mean $\pm$ sample standard deviation across five data seeds after averaging two training seeds, or the minimum where stated; its separate conditions are given below.}
+\label{tab:stageb_frozen_gates}
+\scriptsize
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{p{0.15\textwidth}p{0.30\textwidth}p{0.14\textwidth}p{0.14\textwidth}Y}
+\toprule
+Diagnostic & Stage B criterion & Mamba concat & Causal-TCN concat & Lorenz-96 \\
+\midrule
+Missing route & $M_{\mathrm{miss}}\geq0.20$ in at least 5/6 units & 6/6 units & 6/6 units & $0.561\pm0.014$ \\
+Auxiliary-route use & Positive in at least 5/6 units and median fixed-target $\Delta$MSE $\geq0.05$ & 6/6; median 0.778 & 6/6; median 0.687 & $0.528\pm0.026$ \\
+Direct-score disagreement & Six-unit median Pearson $\leq0.90$ and discrepancy in at least 3/4 NetSim subjects & $r=0.480$; 4/4 & $r=0.779$; 4/4 & $r=0.840\pm0.038$; Jaccard $0.658\pm0.071$ \\
+Coordinate mixing & Median normalized source entropy $\geq0.75$ & 0.969 & 0.965 & $0.956\pm0.003$; 5/5 \\
+Temporal tail & Median mass beyond $K$ $\geq0.05$ & 0.258 & 0.183 & $0.182\pm0.018$; 5/5 \\
+Horizon stability & H64/H128 ratio $\geq0.99$ in at least 5/6 units, minimum $\geq0.95$; nominal difference $\leq10^{-7}$ & Minimum 0.9999; difference 0 & Minimum 1.0000; difference 0 & Minimum $\approx1$; difference 0; 5/5 \\
+Graph context & Baseline NetSim median AUROC $\geq0.60$ only for strong-context interpretation & 0.495; weak & 0.495; weak & Baseline AUROC $0.863\pm0.018$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\begin{minipage}{\textwidth}\scriptsize
+Lorenz conditions: entropy $\geq0.75$ and tail mass $\geq0.05$, each in at least 4/5 data seeds; H64/H128 mass ratio $\geq0.95$ and nominal difference $\leq10^{-7}$, each in all 5/5. All four conditions passed in 5/5. The remaining Lorenz conditions are specified in \ref{app:reproducibility} and the supplied frozen configuration.
+\end{minipage}
+\end{table*}

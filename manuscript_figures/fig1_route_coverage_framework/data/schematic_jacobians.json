@@ -1,0 +1,106 @@
+{
+  "role": "Analytical schematic, not empirical data or ground truth.",
+  "orientation": "matrix[target,source]; edges=(source,target)",
+  "illustrative_nominal_lag": 1,
+  "Jx": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "Jc": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "G": [
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "indirect": [
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "total": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "graph_threshold": 0.5,
+  "partial_edges": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "total_edges": [
+    [
+      3,
+      2
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "mask": "off-diagonal",
+  "abs_order": "signed route sum, then absolute value",
+  "not_empirical_data": true
+}

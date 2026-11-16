@@ -1,0 +1,12 @@
+\begin{tabularx}{\textwidth}{p{0.19\textwidth}ccYYYY}
+\toprule
+Variant & $\lambda_x$ & $\lambda_c$ & AUROC & Coefficient $r$ & Best total objective & Mean $|J_c|$ \\
+\midrule
+Baseline JRNGC & 0.01 & N/A & 0.908 $\pm$ 0.031 & 0.964 $\pm$ 0.020 & 0.00956 $\pm$ 0.00028 & N/A \\
+Concat x-only & 0.01 & 0 & 0.542 $\pm$ 0.085 & 0.265 $\pm$ 0.254 & 0.00509 $\pm$ 0.00019 & N/A \\
+Full, equal penalties & 0.01 & 0.01 & 0.847 $\pm$ 0.066 & 0.880 $\pm$ 0.078 & 0.00548 $\pm$ 0.00050 & 0.0384 $\pm$ 0.0036 \\
+Full, budget normalized & 0.00667 & 0.00667 & 0.836 $\pm$ 0.069 & 0.888 $\pm$ 0.083 & 0.00487 $\pm$ 0.00024 & 0.0490 $\pm$ 0.0129 \\
+Full, $\lambda_c/\lambda_x=0.1$ & 0.01 & 0.001 & 0.614 $\pm$ 0.061 & 0.450 $\pm$ 0.209 & 0.00517 $\pm$ 0.00030 & 0.1925 $\pm$ 0.0375 \\
+Full, $\lambda_c/\lambda_x=10$ & 0.01 & 0.1 & 0.896 $\pm$ 0.041 & 0.939 $\pm$ 0.034 & 0.00670 $\pm$ 0.00035 & 0.0069 $\pm$ 0.0011 \\
+\bottomrule
+\end{tabularx}

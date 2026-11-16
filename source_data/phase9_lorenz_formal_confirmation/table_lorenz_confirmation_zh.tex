@@ -1,0 +1,18 @@
+\begin{table*}[!t]
+\centering
+\caption{\textbf{Lorenz-96 图得分与路径诊断。} 数值为五个新 data seeds 的均值 $\pm$ 样本标准差，每个 data seed 先平均两个 training seeds。Baseline 与 auxiliary concat 使用相同 raw target 和 total raw-chain 名义滞后评估器。}
+\label{tab:lorenz_confirmation}
+\footnotesize
+\begin{tabularx}{\textwidth}{p{0.28\textwidth}p{0.18\textwidth}p{0.20\textwidth}Y}
+\toprule
+指标 & Baseline JRNGC & Auxiliary concat & 配对审计对比 \\
+\midrule
+固定目标纯 MSE & $(3.52\pm0.82)\times10^{-4}$ & $(1.96\pm0.28)\times10^{-4}$ & 下降 $41.6\pm15.5\%$；5/5 seeds \\
+总 raw-chain 名义滞后 AUROC & $0.863\pm0.018$ & $0.859\pm0.015$ & 相对 baseline 为 $-0.004$ \\
+x-only partial 名义滞后 AUROC & $0.863\pm0.018$ & $0.803\pm0.011$ & total--partial 为 $+0.056\pm0.011$；5/5 seeds \\
+缺失路径相对量 & $0$ & $0.561\pm0.014$ & 5/5 seeds 通过 gate \\
+辅助路径 mask 的 $\Delta$MSE & 不适用 & $0.528\pm0.026$ & 5/5 seeds 均为正 \\
+partial--total Pearson / top-$k$ Jaccard & $1/1$ & $0.840\pm0.038$ / $0.658\pm0.071$ & 5/5 seeds 通过差异 gate \\
+\bottomrule
+\end{tabularx}
+\end{table*}

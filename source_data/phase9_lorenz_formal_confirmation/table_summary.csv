@@ -1,0 +1,15 @@
+metric,mean,sample_sd,n_data_seeds
+baseline_fixed_target_prediction_mse,0.0003519325327943079,8.15878420153351e-05,5
+mamba_concat_fixed_target_prediction_mse,0.00019613175245467574,2.80439947820298e-05,5
+baseline_total_nominal_auroc,0.8627777777777782,0.017712553963255332,5
+mamba_concat_total_nominal_auroc,0.8588888888888893,0.014890288076875653,5
+mamba_concat_partial_nominal_auroc,0.803166666666667,0.01100399759010172,5
+mamba_concat_missing_route_relative_magnitude,0.5614416096096166,0.013802273714377106,5
+mamba_concat_mask_c_fixed_target_mse_delta,0.5275411251321203,0.025506514121589805,5
+mamba_concat_partial_total_nominal_pearson,0.8400658014965734,0.038453541054938756,5
+mamba_concat_partial_total_nominal_topk_jaccard,0.65766897732842,0.07118254673804511,5
+mamba_concat_coordinate_entropy_median,0.9562675652795795,0.003399994550220339,5
+mamba_concat_temporal_tail_median,0.18220559554601737,0.01849358906178541,5
+concat_vs_baseline_relative_mse,-0.4155989383353056,0.15450612078972562,5
+concat_total_minus_partial_auroc,0.05572222222222223,0.010780855803314268,5
+concat_total_minus_baseline_auroc,-0.003888888888888986,0.019159620282842675,5

@@ -1,0 +1,98 @@
+{
+  "role": "Illustrative x-only concat audit, not empirical data or a graph-recovery result.",
+  "nominal_lag": "K (symbolic)",
+  "Jx": [
+    [
+      0.8,
+      0.6,
+      0
+    ],
+    [
+      0,
+      0.65,
+      0
+    ],
+    [
+      0.45,
+      0,
+      0.7
+    ]
+  ],
+  "Jc": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0.5,
+      0.5
+    ]
+  ],
+  "raw_map": [
+    [
+      0,
+      -0.6,
+      0.4
+    ],
+    [
+      0,
+      0.2,
+      0.55
+    ]
+  ],
+  "route_masks": {
+    "score": [
+      1,
+      0
+    ],
+    "penalty": [
+      1,
+      0
+    ]
+  },
+  "output_profile": {
+    "score_routes": "PARTIALLY COVERED",
+    "penalty_routes": "PARTIALLY COVERED",
+    "alignment": "same partial object",
+    "coordinates": "raw-variable aligned",
+    "auxiliary_horizon": "UNASSESSED"
+  },
+  "missing": [
+    [
+      0,
+      -0.6,
+      0.4
+    ],
+    [
+      0,
+      0.2,
+      0.55
+    ],
+    [
+      0,
+      -0.19999999999999998,
+      0.47500000000000003
+    ]
+  ],
+  "total": [
+    [
+      0.8,
+      0,
+      0.4
+    ],
+    [
+      0,
+      0.8500000000000001,
+      0.55
+    ],
+    [
+      0.45,
+      -0.19999999999999998,
+      1.175
+    ]
+  ]
+}
